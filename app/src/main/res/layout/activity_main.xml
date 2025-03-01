@@ -57,9 +57,9 @@
             android:src="@drawable/image" />
     </androidx.cardview.widget.CardView>
 
-    <!-- Tên người dùng -->
-    <TextView
-        android:id="@+id/profile_name"
+    <!-- EditText để nhập Tên -->
+    <EditText
+        android:id="@+id/edit_profile_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Johan Smith"
@@ -67,22 +67,31 @@
         android:textStyle="bold"
         android:textColor="@android:color/black"
         android:fontFamily="sans-serif"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:enabled="false"
         app:layout_constraintTop_toBottomOf="@id/cardView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
 
-    <!-- Địa chỉ người dùng -->
-    <TextView
-        android:id="@+id/profile_location"
+    <!-- EditText để nhập địa chỉ -->
+    <EditText
+        android:id="@+id/edit_profile_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="California, USA"
         android:textSize="16sp"
         android:fontFamily="sans-serif"
-        app:layout_constraintTop_toBottomOf="@id/profile_name"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="text"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/edit_profile_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="4dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
